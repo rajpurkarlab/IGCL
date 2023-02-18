@@ -1,0 +1,32 @@
+{
+    "data_args": {
+        "batch_size": 16,
+        "channels": false,
+        "custom_tasks": "siim_acr_pneumothorax",
+        "dataset": "siim_acr_pneumothorax",
+        "gt_csv": null,
+        "num_workers": 8,
+        "paths_csv": "/deep/group/cxr-transfer/datasets/siim-acr-pneumothorax-segmentation/metadata/test.csv",
+        "phase": "test",
+        "test_csv": "/deep/group/cxr-transfer/datasets/siim-acr-pneumothorax-segmentation/metadata/test.csv",
+        "together": "true",
+        "toy": false,
+        "uncertain_map_path": null
+    },
+    "gpu_ids": "0",
+    "inference_only": false,
+    "logger_args": {
+        "experiment_name": "siim-SSL-Finetuned-MIMICcxr-Resnet50",
+        "only_competition_cams": false,
+        "only_evaluation_cams": true,
+        "save_cams": false,
+        "save_dir": "/deep/group/cxr-transfer/SSL-methods/MedAug/experiments/test_csv"
+    },
+    "model_args": {
+        "calibrate": false,
+        "ckpt_path": "deep/group/cxr-transfer/SSL-methods/MedAug/experiments/siim-SSL-Finetuned-MIMICcxr-Resnet50/iter_753664.pth.tar",
+        "config_path": null,
+        "moco": false,
+        "model_uncertainty": false
+    }
+}

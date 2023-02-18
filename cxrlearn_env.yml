@@ -1,0 +1,4 @@
+name: cxrlearn
+channels:
+  - defaults
+prefix: /deep/u/sameerk/miniconda3/envs/cxrlearn
